@@ -2,9 +2,9 @@
 
 /**
  * print_alphabet - all in lowercase, followed by a new line
- *
  */
-int main(void)
+void print_alphabet(void)
+
 {
 	char letter;
 
@@ -12,4 +12,5 @@ int main(void)
 		_putchar(letter);
 
 	_putchar('\n');
+
 }
