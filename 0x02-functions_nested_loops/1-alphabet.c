@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always returns 0
+ * print_alphabet - all in lowercase, followed by a new line
  *
  */
 int main(void)
