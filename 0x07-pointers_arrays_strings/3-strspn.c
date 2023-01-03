@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strspn -Write a function that gets the length of a prefix substring.
+ * _strspn - length of prefix substring
  * @s: string to go through
  * @accept: accepted bytes
- * Return: number of bytes
- *
+ * Return: returns usigned values
  */
 
 unsigned int _strspn(char *s, char *accept)
