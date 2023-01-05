@@ -1,15 +1,29 @@
+#include "main.h"
+
 /**
- * is_prime_number - detects if an input number is a prime number.
- * @n: input number.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ * check - checks to see if number is prime
+ * @a:int
+ * @b:int
+ * Return:int
+ */
+int check(int a, int b)
+{
+	if (b < 2 || b % a == 0)
+		return (0);
+	else if (a > b / 2)
+		return (1);
+	else
+		return (check(a + 1, b));
+}
+
+/**
+ * is_prime_number - states if number is prime
+ * @n:int
+ * Return:int
  */
 int is_prime_number(int n)
 {
-	if (n == 0)
-		return (0);
-	if (n < 0)
-		return (0);
-	if (n == 1)
-		return (0);
-	return (is_prime(n, 2));
+	if (n == 2)
+		return (1);
+	return (check(2, n));
 }
